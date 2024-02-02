@@ -12,7 +12,7 @@ ul {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
@@ -121,11 +121,11 @@ ul {
 }
 
 .hero-button:hover {
-  color: #404bbf;
+  background-color: #404bbf;
 }
 
 .hero-button:focus {
-  color: #404bbf;
+  background-color: #404bbf;
 }
 
 .skills-titel {
@@ -231,7 +231,7 @@ ul {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
