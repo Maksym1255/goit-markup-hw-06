@@ -51,8 +51,6 @@ section:not(:nth-child(1)) {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header-logo {
@@ -88,6 +86,11 @@ section:not(:nth-child(1)) {
   color: #2e2f42;
 }
 
+.nav-list {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .nav-link {
   color: #2e2f42;
 }
@@ -116,22 +119,15 @@ section:not(:nth-child(1)) {
   color: #404bbf;
 }
 
-.address-mail {
+.address-item {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-}
-
-.address-tel {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .page-header .container {
@@ -151,11 +147,6 @@ section:not(:nth-child(1)) {
   display: flex;
   gap: 40px;
 }
-
-/* .nav-list {
-  padding-top: 24px;
-  padding-bottom: 24px;
-} */
 
 .address-list {
   display: flex;
