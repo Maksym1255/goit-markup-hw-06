@@ -233,6 +233,10 @@ section:not(:nth-child(1)) {
   overflow: hidden;
 }
 
+.skills-list-item {
+  width: calc((100% - 72px) / 4);
+}
+
 .skills-list {
   display: flex;
   gap: 24px;
@@ -250,6 +254,12 @@ section:not(:nth-child(1)) {
 
 .team-item {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px;
+}
+
+.team-block {
+  padding: 32px 0;
 }
 
 .team-titel {
@@ -271,6 +281,7 @@ section:not(:nth-child(1)) {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team-profession {
@@ -286,22 +297,6 @@ section:not(:nth-child(1)) {
 .team-list {
   display: flex;
   gap: 24px;
-}
-
-.team-foto {
-  margin-bottom: 32px;
-}
-
-.team-name {
-  margin-bottom: 8px;
-}
-
-.team-profession {
-  padding-bottom: 32px;
-}
-
-.team-titel {
-  margin-bottom: 72px;
 }
 
 /* Section 4 */
