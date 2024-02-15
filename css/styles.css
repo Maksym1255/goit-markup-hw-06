@@ -167,7 +167,7 @@ section:not(:nth-child(1)) {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  width: 496px;
+  max-width: 496px;
   text-align: center;
   color: #fff;
   margin-left: auto;
@@ -176,6 +176,11 @@ section:not(:nth-child(1)) {
 }
 
 .hero-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
