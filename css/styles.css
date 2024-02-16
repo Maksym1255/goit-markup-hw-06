@@ -86,12 +86,9 @@ section:not(:nth-child(1)) {
   color: #2e2f42;
 }
 
-.nav-list {
-  padding: 24px 0;
-}
-
 .nav-link {
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .nav-link:hover {
