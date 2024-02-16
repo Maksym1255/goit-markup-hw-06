@@ -87,8 +87,7 @@ section:not(:nth-child(1)) {
 }
 
 .nav-list {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
 }
 
 .nav-link {
@@ -159,7 +158,6 @@ section:not(:nth-child(1)) {
 
 .hero {
   background-color: #2e2f42;
-  text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
 }
