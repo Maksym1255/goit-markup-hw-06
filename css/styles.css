@@ -281,10 +281,10 @@ section:not(:nth-child(1)) {
   margin-bottom: 8px;
 }
 
-.skills-icon-size {
+/* .skills-icon-size {
   width: 64px;
   height: 64px;
-}
+} */
 
 .skills-list {
   display: flex;
@@ -366,7 +366,7 @@ section:not(:nth-child(1)) {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-item {
@@ -376,14 +376,12 @@ section:not(:nth-child(1)) {
 
 .social-list-icon {
   display: block;
-  width: 16px;
-  height: 16px;
   fill: #f4f4fd;
 }
 
 .social-list-link:hover,
 .social-list-link:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 /* Section 4 */
