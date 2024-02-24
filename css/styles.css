@@ -48,9 +48,9 @@ section:not(:nth-child(1)) {
 /* Header */
 
 .page-header {
-  /* border-bottom: 1px solid #e7e9fc;
+  /* border-bottom: 1px solid #e7e9fc; */
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08); */
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-logo {
@@ -126,6 +126,7 @@ section:not(:nth-child(1)) {
 
 .address-link {
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:focus {
@@ -141,7 +142,6 @@ section:not(:nth-child(1)) {
   color: #434455;
   padding-top: 24px;
   padding-bottom: 24px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-header-container {
@@ -220,6 +220,7 @@ section:not(:nth-child(1)) {
   background-color: #4d5ae5;
   margin: 0 auto;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover {
@@ -278,6 +279,11 @@ section:not(:nth-child(1)) {
   align-items: center;
   background: #f4f4fd;
   margin-bottom: 8px;
+}
+
+.skills-icon-size {
+  width: 64px;
+  height: 64px;
 }
 
 .skills-list {
@@ -348,33 +354,35 @@ section:not(:nth-child(1)) {
 
 .social-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
   justify-content: center;
 }
 
 .social-list-link {
-  display: block;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background-color: #4d5ae5;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-icon {
   display: block;
-  max-width: 100%;
-  fill: #fff;
+  width: 16px;
+  height: 16px;
+  fill: #f4f4fd;
 }
 
-.social-list-item:hover,
-.social-list-item:focus {
+.social-list-link:hover,
+.social-list-link:focus {
   background-color: #31d0aa;
 }
 
@@ -423,6 +431,7 @@ section:not(:nth-child(1)) {
 
 .portfolio-row-list {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-block {
@@ -450,8 +459,8 @@ section:not(:nth-child(1)) {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   background-color: #4d5ae5;
-  padding: 40px 32px 164px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px 32px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   transform: translateY(100%);
 }
@@ -509,6 +518,7 @@ section:not(:nth-child(1)) {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -518,7 +528,7 @@ section:not(:nth-child(1)) {
 
 .footer-social-list {
   display: flex;
-  column-gap: 16px;
+  gap: 16px;
 }
 
 .footer-social {
