@@ -544,6 +544,6 @@ section:not(:nth-child(1)) {
 }
 
 .social-list-link-footer:hover,
-.social-list-link-footer:hover {
+.social-list-link-footer:focus {
   background-color: #31d0aa;
 }
