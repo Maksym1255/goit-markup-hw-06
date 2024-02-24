@@ -48,7 +48,9 @@ section:not(:nth-child(1)) {
 /* Header */
 
 .page-header {
-  border-bottom: 1px solid #e7e9fc;
+  /* border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08); */
 }
 
 .header-logo {
@@ -87,6 +89,23 @@ section:not(:nth-child(1)) {
 .nav-link {
   color: #2e2f42;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.nav-link-strip {
+  color: #404bbf;
+}
+
+.nav-link-strip::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 .nav-link:hover {
@@ -122,6 +141,7 @@ section:not(:nth-child(1)) {
   color: #434455;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-header-container {
@@ -156,6 +176,18 @@ section:not(:nth-child(1)) {
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-titel {
@@ -187,6 +219,7 @@ section:not(:nth-child(1)) {
   cursor: pointer;
   background-color: #4d5ae5;
   margin: 0 auto;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:hover {
@@ -235,6 +268,18 @@ section:not(:nth-child(1)) {
   width: calc((100% - 72px) / 4);
 }
 
+.skills-icon {
+  display: flex;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+}
+
 .skills-list {
   display: flex;
   gap: 24px;
@@ -254,6 +299,8 @@ section:not(:nth-child(1)) {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-block {
@@ -291,11 +338,44 @@ section:not(:nth-child(1)) {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-bottom: 8px;
 }
 
 .team-list {
   display: flex;
   gap: 24px;
+}
+
+.social-list {
+  display: flex;
+  column-gap: 24px;
+  justify-content: center;
+}
+
+.social-list-link {
+  display: block;
+}
+
+.social-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-icon {
+  display: block;
+  max-width: 100%;
+  fill: #fff;
+}
+
+.social-list-item:hover,
+.social-list-item:focus {
+  background-color: #31d0aa;
 }
 
 /* Section 4 */
@@ -351,6 +431,39 @@ section:not(:nth-child(1)) {
   border-top: none;
 }
 
+.portfolio-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-imj-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  padding: 40px 32px 164px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transform: translateY(100%);
+}
+
+.portfolio-row-list:hover .portfolio-imj-text {
+  transform: translateY(0%);
+}
+
+.portfolio-row-list:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
 /* Footer */
 
 .footer-text {
@@ -392,4 +505,33 @@ section:not(:nth-child(1)) {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-logo {
+  display: block;
+  margin-right: 120px;
+}
+
+.footer-social-list {
+  display: flex;
+  column-gap: 16px;
+}
+
+.footer-social {
+  display: block;
+  width: 208px;
+}
+
+.footer-social-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
 }
