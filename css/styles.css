@@ -519,7 +519,7 @@ section:not(:nth-child(1)) {
   align-items: baseline;
 }
 
-.footer-logo {
+.footer-logo-box {
   margin-right: 120px;
 }
 
