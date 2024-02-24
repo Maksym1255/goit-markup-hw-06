@@ -543,3 +543,7 @@ section:not(:nth-child(1)) {
   color: #fff;
   margin-bottom: 16px;
 }
+
+.social-list-link-footer:hover {
+  background-color: #31d0aa;
+}
