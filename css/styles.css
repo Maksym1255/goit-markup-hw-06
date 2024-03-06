@@ -631,7 +631,7 @@ section:not(:nth-child(1)) {
 
 .is-open {
   opacity: 1;
-  /* visibility: visible; */
+  visibility: visible;
   pointer-events: auto;
 }
 
