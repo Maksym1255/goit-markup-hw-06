@@ -517,7 +517,6 @@ section:not(:nth-child(1)) {
 .footer-container {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
 }
 
 .footer-logo-box {
@@ -532,6 +531,7 @@ section:not(:nth-child(1)) {
 .footer-social {
   display: block;
   width: 208px;
+  margin-right: 80px;
 }
 
 .footer-social-text {
