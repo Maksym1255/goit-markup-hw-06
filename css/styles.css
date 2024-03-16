@@ -43,7 +43,7 @@ img {
 
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1158px;
+    max-width: 1170px;
   }
 }
 
@@ -223,6 +223,9 @@ a {
     flex-direction: row;
     gap: 40px;
   }
+  .address-link {
+    font-size: 16px;
+  }
 }
 
 /* ============== Header ============ */
@@ -295,7 +298,7 @@ a {
   background-color: #404bbf;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 321px) {
   .hero {
     padding-top: 112px;
     padding-bottom: 112px;
@@ -325,7 +328,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 769px) {
   .hero {
     padding-top: 188px;
     padding-bottom: 188px;
@@ -456,7 +459,7 @@ a {
 .team-item {
   display: block;
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
+  padding: 0;
   max-width: 264px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -564,8 +567,8 @@ a {
 }
 
 .portfolio-row-list {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  /* box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08); */
   background: #fff;
 }
 
@@ -722,7 +725,7 @@ a {
 .footer-social-list {
   display: flex;
   gap: 16px;
-  margin-bottom: 72px;
+  margin-bottom: 0;
 }
 
 .social-list-link-footer:hover,
@@ -856,7 +859,7 @@ a {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-open-form {
+.backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -1160,6 +1163,10 @@ a {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+  }
+
+  .mobile-address {
+    font-style: normal;
   }
 
   .mobile-address-list {
